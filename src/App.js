@@ -12,7 +12,7 @@ function App() {
       <div className="content">
         <h1>TODO LIST</h1>
           <Save todo={todo} setTodo={setTodo}/>
-          <Todolist todo={todo}/>
+          <Todolist todo={todo} setTodo={setTodo}/>
       </div>
     </div>
   );

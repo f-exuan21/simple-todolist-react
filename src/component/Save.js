@@ -1,8 +1,10 @@
+let idx = 0;
+
 const Save = ({ todo, setTodo }) => {
     const save = () => {
         const inputValue = document.getElementById("todoInput");
         let copy = [...todo];
-        copy.push(inputValue.value);
+        copy.push({id: ++idx, text: inputValue.value, done: true});
         inputValue.value = "";
         setTodo(copy);
     };
